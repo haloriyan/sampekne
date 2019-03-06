@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hehe</title>
+	<style>
+		#slider {
+			margin-top: 270px;
+			font-family: sans-serif;
+			text-align: center;
+			color: #454545;
+		}
+		#slider h1 {
+			font-size: 55px;
+		}
+		#slider p {
+			font-size: 22px;
+			margin-top: 60px;
+		}
+	</style>
+</head>
+<body>
+
+<div id="slider"></div>
+
+<script src="slider.js"></script>
+<script>	
+let slide = new Sampekne({
+	el: "#slider",
+	slides: [
+		{
+			title: "Hello World!",
+			content: "Lorem ipsum dolor sit amet consectetur adipisicng elit eiusmod dolor magna aliqua"
+		},
+		{
+			title: "Halo",
+			content: "dunia"
+		},
+		{
+			title: "Hello World!",
+			content: "Lorem ipsum dolor sit amet consectetur adipisicng elit eiusmod dolor magna aliqua"
+		},
+		{
+			title: "Halo",
+			content: "dunia"
+		}
+	]
+})
+</script>
+
+</body>
+</html>
