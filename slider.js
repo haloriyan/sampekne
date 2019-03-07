@@ -22,6 +22,8 @@ class Sampekne {
 		})
 	}
 	show() {
+		this.background = this.slides[this.posisi].background
+		
 		let area = document.querySelector(this.el)
 		area.innerHTML = ''
 
@@ -32,6 +34,13 @@ class Sampekne {
 		let createContent = document.createElement("p")
 		createContent.innerHTML = this.slides[this.posisi].content
 		area.appendChild(createContent)
+
+		// set background
+		if(!this.background) {
+			document.querySelector("body").setAttribute("style", "background: none;")
+		}else {
+			document.querySelector("body").setAttribute("style", "background: url("+this.background.src+");background-size: "+this.background.size+";")
+		}
 	}
 	next() {
 		this.posisi += 1
